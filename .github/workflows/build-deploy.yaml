@@ -10,7 +10,7 @@ env:
   PROJECT_ID: ${{secrets.GKE_PROJECT}}
   GKE_CLUSTER: k8s-microservices-assignment
   GKE_ZONE: us-central1-c
-  DEPLOYMENT_NAME: github-actions-gke-deployment
+  DEPLOYMENT_NAME: github-actions-gke
   IMAGE: github-actions-gke-image
   TAG: 1.0.0
  
