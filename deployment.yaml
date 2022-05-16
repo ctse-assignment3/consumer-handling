@@ -16,7 +16,8 @@ spec:
         spec:
             containers:
             - name: docker-k8s
-              image: anuththarajayakody/it19114040-assignment:0a37bacf97ee4a8b2b69ae86e9ac33c545288029
+              image: gcr.io/PROJECT_ID/IMAGE:TAG
+              imagePullPolicy: Always
               ports:
               - containerPort: 8086
       
