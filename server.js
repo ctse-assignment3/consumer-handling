@@ -34,7 +34,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "IT19114040 - Jayakody J. A. D. K. A." });
+  res.json({ message: "IT19114040 - Jayakody J. A. D. K. A.\n Microservices Assignment" });
 });
 
 require("./app/routes/consumer.routes")(app);
