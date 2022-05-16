@@ -1,23 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: docker-k8s-deployment
-    labels:
-        app: docker-k8s
-spec: 
-    replicas: 1
-    selector:
-        matchLabels:
-            app: docker-k8s
-    template:
-        metadata:
-            labels:
-                app: docker-k8s
-        spec:
-            containers:
-            - name: docker-k8s
-              image: gcr.io/PROJECT_ID/IMAGE:TAG
-              imagePullPolicy: Always
-              ports:
-              - containerPort: 8086
-      
+  name: github-actions-gke
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: github-actions-gke
+  template:
+    metadata:
+      labels:
+        app: github-actions-gke
+    spec:
+      containers:
+        - name: app
+          image: gcr.io/PROJECT_ID/IMAGE:TAG
+          imagePullPolicy: Always
